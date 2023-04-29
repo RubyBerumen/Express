@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <meta name="theme-color" content="#000000" />
+
+    <title>Agregar ALUMNOS</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="">
+                    <img src="images/estudiantes.png" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+                    aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample07">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" target="">Academico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="font-size: 28px; margin-top: 50px;" class=" text-center"> SERVICIOS ESCOLARES</h1>
+
+                        <div class="col-md-10">
+
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Alumnos</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Agregar</li>
+                                </ol>
+                            </nav>
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div class="content-box-large">
+
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <h2>Datos del alumno:</h2>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="panel-body">
+
+                                            <section class="example mt-4">
+
+                                                 <form method="POST" action="http://localhost:3000/api/v1/alumnos"> 
+                                                <!--<form method="POST" action="/alumnos"></form>-->
+                                                    <div class="mb-3">
+                                                        <label for="num_control" class="negrita">Numero de control:</label>
+                                                        <div>
+                                                            <input class="form-control" placeholder="00000000"
+                                                                required="required" name="num_control" type="text"
+                                                                id="num_control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="nombre" class="negrita">Nombre:</label>
+                                                        <div>
+                                                            <input class="form-control"
+                                                                placeholder="Solo texto"
+                                                                required="required" name="nombre" type="text"
+                                                                id="nombre">
+                                                        </div>
+                                                    </div>
+
+                                                    <button type="submit" class="btn btn-success">Guardar</button>
+                                                    <a href="/" class="btn btn-warning">Cancelar</a>
+
+                                                </form>
+
+                                            </section>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+       
+
+    
+
+
+
+    <footer class="text-muted mt-3 mb-3">
+        <div align="center">
+            <hr /> FOOTER        
+        </div>
+    </footer>
+
+    <!-- JS Bootstrap  -->
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
